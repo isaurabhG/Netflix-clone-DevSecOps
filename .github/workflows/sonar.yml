@@ -44,7 +44,7 @@ jobs:
         env:
            DOCKER_CLI_ACI: 1
  
- deploy:
+   deploy:
         needs: build-analyze-scan
         runs-on: [aws-netflix] 
         steps:
