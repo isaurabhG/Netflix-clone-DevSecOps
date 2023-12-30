@@ -54,7 +54,7 @@ jobs:
       - aws-netflix
     steps:
       - name: Pull the docker image
-        run: docker pull isaurabh/netflix:latest
+        run: docker pull isaurabhg/netflix:latest
       - name: Trivy image scan
         run: trivy image isaurabhg/netflix:latest
       - name: Run the container netflix
